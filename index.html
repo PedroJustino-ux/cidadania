@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Projeto de vida e escolhas responsáveis</title>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+@property --a{syntax:'<color>';inherits:true;initial-value:#7c3aed}
+@property --b{syntax:'<color>';inherits:true;initial-value:#06b6d4}
+*{box-sizing:border-box}
+html,body{margin:0;height:100%;background:#07061a;color:#f2f0ff;font-family:'Sora',system-ui,-apple-system,'Segoe UI',sans-serif;overflow:hidden}
+.bg{position:fixed;inset:0;transition:--a 1.2s,--b 1.2s;background:radial-gradient(60% 60% at 12% 18%,var(--a),transparent 72%),radial-gradient(55% 55% at 92% 88%,var(--b),transparent 72%),linear-gradient(160deg,#0a0820,#07061a 60%,#120a2e);opacity:.8}
+.s{position:absolute;inset:0;display:grid;grid-template-columns:1.3fr .7fr;align-items:center;gap:4vw;padding:6vh 7vw 11vh;overflow-y:auto;opacity:0;visibility:hidden;transition:opacity .9s ease,visibility .9s}
+.s.on{opacity:1;visibility:visible}
+h1,h2{margin:0 0 .5em;font-weight:800;line-height:1.1;letter-spacing:-.02em;background:linear-gradient(90deg,#fff,#c4b5fd 55%,#67e8f9);-webkit-background-clip:text;background-clip:text;color:transparent}
+h1{font-size:clamp(2rem,5vw,4rem)}
+h2{font-size:clamp(1.5rem,3.2vw,2.5rem)}
+p{margin:.4em 0;line-height:1.55;font-size:clamp(.9rem,1.5vw,1.15rem);color:#d9d4ff;max-width:68ch}
+b{color:#fff}
+.g{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:.7rem;margin:.8rem 0}
+.c{background:linear-gradient(135deg,rgba(255,255,255,.1),rgba(255,255,255,.03));border:1px solid rgba(255,255,255,.14);border-radius:16px;padding:.7em 1em;backdrop-filter:blur(8px);font-size:clamp(.8rem,1.25vw,1rem);line-height:1.45;color:#d9d4ff}
+.c b{display:block;margin-bottom:.15em;background:linear-gradient(90deg,#f0abfc,#67e8f9);-webkit-background-clip:text;background-clip:text;color:transparent}
+.c.A{border-left:4px solid #fb7185}.c.B{border-left:4px solid #fbbf24}.c.C{border-left:4px solid #34d399}
+.note{border-left:3px solid #67e8f9;padding-left:1em;color:#e9e5ff}
+.art{display:flex;justify-content:center}
+.art svg{width:100%;max-width:340px;height:auto;filter:drop-shadow(0 0 28px rgba(168,85,247,.55))}
+.meta{display:grid;gap:.2rem;margin-top:1rem}
+nav{position:fixed;left:0;right:0;bottom:0;display:flex;align-items:center;justify-content:center;gap:1.2rem;padding:1.2vh 0 2vh;z-index:5}
+nav button{width:44px;height:44px;border-radius:50%;border:1px solid rgba(255,255,255,.25);background:rgba(255,255,255,.08);color:#fff;font-size:1.3rem;cursor:pointer;backdrop-filter:blur(8px);transition:background .3s}
+nav button:hover,nav button:focus-visible{background:linear-gradient(135deg,#a855f7,#06b6d4);outline:none}
+#cnt{min-width:64px;text-align:center;color:#b9b3e6;font-size:.9rem}
+#barw{position:fixed;top:0;left:0;right:0;height:4px;background:rgba(255,255,255,.1);z-index:6}
+#bar{height:100%;width:0;background:linear-gradient(90deg,#ec4899,#a855f7,#06b6d4);transition:width .6s}
+@media(max-width:800px){.s{grid-template-columns:1fr;align-content:start;gap:1rem;padding:5vh 6vw 14vh}.art{order:-1}.art svg{max-width:150px}}
+@media(prefers-reduced-motion:reduce){.s,.bg,#bar{transition:none}}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute"><defs>
+<linearGradient id="g1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f472b6"/><stop offset="1" stop-color="#8b5cf6"/></linearGradient>
+<linearGradient id="g2" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#22d3ee"/><stop offset="1" stop-color="#6366f1"/></linearGradient>
+</defs></svg>
+<div class="bg"></div>
+<div id="barw"><div id="bar"></div></div>
+
+<section class="s">
+<div><h1>Projeto de vida e escolhas responsáveis</h1>
+<p>Na juventude tomamos decisões que podem influenciar nossa vida por muito tempo. Planejar objetivos e escolher com consciência ajuda a construir um futuro melhor.</p><p>Mas o futuro dos jovens também depende de uma sociedade <b>mais justa, democrática e solidária</b>, que ofereça oportunidades reais a todos.</p>
+<div class="g"><div class="c"><b>Estudos</b>O caminho que seguimos na escola e depois dela.</div><div class="c"><b>Profissão</b>As escolhas que moldam a carreira.</div><div class="c"><b>Relacionamentos</b>Como convivemos com as pessoas.</div><div class="c"><b>Sociedade</b>Nossa participação na comunidade.</div></div></div>
+<div class="art"><svg viewBox="0 0 200 200" fill="none"><circle cx="100" cy="100" r="78" stroke="url(#g2)" stroke-width="7"/><circle cx="100" cy="100" r="62" stroke="url(#g1)" stroke-width="2" stroke-dasharray="3 8"/><polygon points="100,38 116,100 100,162 84,100" fill="url(#g1)"/><polygon points="100,38 116,100 84,100" fill="url(#g2)"/><circle cx="100" cy="100" r="7" fill="#fff"/></svg></div>
+</section>
+
+<section class="s">
+<div><h2>O que é um projeto de vida?</h2>
+<p>Um planejamento pessoal que reúne <b>objetivos, valores, sonhos e ações</b> para refletir sobre quem somos, quem queremos ser e quais caminhos seguir.</p>
+<div class="g"><div class="c"><b>Autoconhecimento</b>Reconhecer habilidades, interesses, valores e dificuldades.</div><div class="c"><b>Objetivos</b>Metas pessoais, educacionais e profissionais.</div><div class="c"><b>Planejamento</b>Etapas e recursos para chegar lá.</div><div class="c"><b>Acompanhamento</b>Avaliar o progresso e mudar a estratégia.</div><div class="c"><b>Flexibilidade</b>Interesses e circunstâncias podem mudar.</div></div>
+<p class="note">Um projeto de vida não precisa ser definitivo: ele se adapta às experiências e oportunidades. Para muitos jovens, sonhar e planejar esbarra na falta de oportunidades, por isso o plano individual precisa de uma sociedade que o apoie.</p></div>
+<div class="art"><svg viewBox="0 0 200 200" fill="none"><path d="M40 170C90 160 30 115 95 105S150 70 160 45" stroke="url(#g2)" stroke-width="7" stroke-linecap="round" stroke-dasharray="2 14"/><circle cx="40" cy="170" r="10" fill="url(#g2)"/><path d="M160 45V12" stroke="#fff" stroke-width="5" stroke-linecap="round"/><polygon points="160,12 190,24 160,36" fill="url(#g1)"/></svg></div>
+</section>
+
+<section class="s">
+<div><h2>Por que estabelecer objetivos?</h2>
+<p>Objetivos transformam intenções em ações concretas.</p>
+<div class="g"><div class="c"><b>Pessoais</b>Autonomia, saúde, bons relacionamentos e novos hábitos.</div><div class="c"><b>Educacionais</b>Concluir os estudos, melhorar o desempenho e ingressar em uma instituição de ensino.</div><div class="c"><b>Profissionais</b>Conhecer profissões, buscar qualificação e planejar a carreira.</div></div>
+<p><b>Benefícios:</b> prioridades e tempo organizados, decisões mais claras, acompanhamento do desenvolvimento, motivação diante das dificuldades.</p>
+<p class="note"><b>Exemplo:</b> quem quer entrar na faculdade pesquisa os cursos, organiza a rotina de estudos e acompanha o desempenho para ver o que melhorar.</p><p>Nem todo jovem tem escola de qualidade, internet, bolsas ou tempo livre para estudar. Garantir esses acessos é uma questão de <b>justiça social</b>.</p></div>
+<div class="art"><svg viewBox="0 0 200 200" fill="none"><circle cx="95" cy="105" r="70" stroke="url(#g2)" stroke-width="7"/><circle cx="95" cy="105" r="46" stroke="url(#g1)" stroke-width="7"/><circle cx="95" cy="105" r="22" fill="url(#g1)"/><path d="M185 15L98 102" stroke="#fff" stroke-width="5" stroke-linecap="round"/><path d="M185 15l-4 24M185 15l-24 4M170 30l-4 22M170 30l-22 4" stroke="url(#g2)" stroke-width="5" stroke-linecap="round"/></svg></div>
+</section>
+
+<section class="s">
+<div><h2>Como nossas escolhas influenciam o futuro?</h2>
+<p>Cada decisão do dia a dia gera consequências, imediatas ou de longo prazo.</p>
+<div class="g"><div class="c"><b>Organizar os estudos</b>Favorece a aprendizagem e as avaliações.</div><div class="c"><b>Adiar responsabilidades</b>Acumula tarefas e aumenta as dificuldades.</div><div class="c"><b>Cuidar da saúde</b>Física e emocional: mais bem-estar.</div><div class="c"><b>Ceder à pressão dos amigos</b>Pode ir contra os próprios valores.</div><div class="c"><b>Pesquisar antes de decidir</b>Compara alternativas e consequências.</div></div>
+<p>Escolha responsável considera objetivos, informações, direitos dos outros e efeitos das ações.</p>
+<p class="note">Nem tudo depende só de nós: condições econômicas, familiares e sociais também pesam. Planejar é escolher com consciência, sem ignorar a realidade. Uma sociedade justa garante condições para que todos possam escolher de verdade.</p></div>
+<div class="art"><svg viewBox="0 0 200 200" fill="none"><path d="M100 185V110M100 110C100 80 55 85 55 45M100 110C100 80 145 85 145 45" stroke="url(#g2)" stroke-width="8" stroke-linecap="round"/><circle cx="55" cy="35" r="13" fill="url(#g1)"/><circle cx="145" cy="35" r="13" fill="url(#g2)"/><circle cx="100" cy="185" r="8" fill="#fff"/></svg></div>
+</section>
+
+<section class="s">
+<div><h2>Atitudes que ajudam a alcançar objetivos</h2>
+<div class="g"><div class="c"><b>Disciplina</b>Manter rotina e cumprir compromissos.</div><div class="c"><b>Responsabilidade</b>Avaliar consequências e assumir deveres.</div><div class="c"><b>Organização</b>Dividir metas grandes em etapas.</div><div class="c"><b>Persistência</b>Tentar de novo e aprender com os erros.</div><div class="c"><b>Autoconhecimento</b>Conhecer habilidades e limites.</div><div class="c"><b>Autonomia</b>Decidir com reflexão própria.</div><div class="c"><b>Flexibilidade</b>Adaptar o plano às mudanças.</div><div class="c"><b>Busca de orientação</b>Conversar com professores, família ou profissionais.</div></div>
+<p class="note"><b>Na prática:</b> definir uma meta clara, criar etapas e prazos realistas, acompanhar os resultados, identificar dificuldades e ajustar o plano. Essas atitudes ganham força com <b>solidariedade</b>: estudar em grupo, apoiar colegas e pedir ajuda.</p></div>
+<div class="art"><svg viewBox="0 0 200 200" fill="none"><path d="M15 175H55V140H95V105H135V70H175" stroke="url(#g2)" stroke-width="8" stroke-linejoin="round" stroke-linecap="round"/><path d="M175 70V25" stroke="#fff" stroke-width="5" stroke-linecap="round"/><polygon points="175,25 198,34 175,43" fill="url(#g1)"/><circle cx="35" cy="155" r="8" fill="url(#g1)"/></svg></div>
+</section>
+
+<section class="s">
+<div><h2>Situação-problema: qual é a melhor decisão?</h2>
+<p>Um estudante tem prova importante amanhã e ainda precisa revisar parte do conteúdo, mas os amigos o convidam para sair hoje.</p>
+<div class="g"><div class="c A"><b>A. Sair sem pensar na prova</b>Prejudica a preparação e pode gerar arrependimento.</div><div class="c B"><b>B. Estudar a noite toda</b>Mais revisão, mas sem descanso a concentração cai.</div><div class="c C"><b>C. Solução equilibrada</b>Revisar o essencial, descansar e combinar outro dia com os amigos.</div></div>
+<p class="note"><b>Reflexão:</b> escolher com responsabilidade não é abandonar o lazer, e sim avaliar prioridades e consequências. Na realidade dos jovens, decisões como essa envolvem também trabalho, família e falta de tempo, e o diálogo e o respeito entre amigos fazem parte de uma convivência democrática.</p></div>
+<div class="art"><svg viewBox="0 0 200 200" fill="none"><path d="M100 28V165M65 168H135" stroke="#fff" stroke-width="6" stroke-linecap="round"/><path d="M35 62L165 62" stroke="url(#g2)" stroke-width="7" stroke-linecap="round"/><path d="M35 62L16 114H54ZM165 62L146 114H184Z" stroke="url(#g1)" stroke-width="6" stroke-linejoin="round"/><circle cx="100" cy="24" r="8" fill="url(#g1)"/></svg></div>
+</section>
+
+<section class="s">
+<div><h2>E você, o que faria?</h2>
+<p>Se você tivesse um objetivo importante e recebesse um convite que pudesse atrapalhar sua preparação, como decidiria?</p>
+<div class="g"><div class="c"><b>A</b>Aceitaria o convite sem considerar as consequências.</div><div class="c"><b>B</b>Avaliaria as prioridades e tentaria conciliar responsabilidades e lazer.</div><div class="c"><b>C</b>Abriria mão de todo lazer para se dedicar só ao objetivo.</div></div>
+<p><b>Dinâmica:</b> escolher alguém para responder e justificar; depois, relacionar as respostas ao planejamento e ao equilíbrio.</p>
+<p class="note">Existe sempre uma única decisão correta, ou precisamos considerar as circunstâncias de cada situação? E o que a sociedade pode fazer para que todo jovem tenha escolhas reais?</p></div>
+<div class="art"><svg viewBox="0 0 200 200" fill="none"><rect x="12" y="25" width="115" height="75" rx="20" stroke="url(#g2)" stroke-width="7"/><path d="M40 100L32 128L66 100" fill="url(#g2)"/><rect x="72" y="100" width="116" height="78" rx="20" fill="rgba(255,255,255,.07)" stroke="url(#g1)" stroke-width="7"/><text x="130" y="161" text-anchor="middle" font-size="58" font-weight="800" fill="url(#g1)" font-family="Sora,sans-serif">?</text></svg></div>
+</section>
+
+<section class="s">
+<div><h2>Projeto de vida, responsabilidade e cidadania</h2>
+<p>Nossas decisões afetam a nossa trajetória e também as pessoas com quem convivemos. O futuro dos jovens depende de uma sociedade <b>justa, democrática e solidária</b>.</p>
+<div class="g"><div class="c"><b>Autonomia</b>Fazer escolhas conscientes.</div><div class="c"><b>Respeito</b>Reconhecer direitos, limites e escolhas dos outros.</div><div class="c"><b>Responsabilidade social</b>Pensar no efeito sobre família, escola e comunidade.</div><div class="c"><b>Participação democrática</b>Grêmio estudantil, voto a partir dos 16 anos e debate público.</div><div class="c"><b>Justiça e igualdade</b>Reconhecer condições sociais diferentes e defender oportunidades para todos.</div><div class="c"><b>Solidariedade</b>Pedir ajuda e ajudar o outro também é crescer.</div></div>
+<p class="note"><b>Conclusão:</b> construir um projeto de vida é definir objetivos, agir com responsabilidade e adaptar os planos. Não precisamos ter o futuro decidido na juventude, mas sim aprender a refletir sobre nossas escolhas e suas consequências. Cada jovem que planeja com responsabilidade e participa da sociedade ajuda a construir um país mais justo, democrático e solidário. <b>Obrigado pela atenção!</b></p></div>
+<div class="art"><svg viewBox="0 0 200 200" fill="none"><path d="M100 48L55 126H145Z" stroke="url(#g2)" stroke-width="5" stroke-linejoin="round" stroke-dasharray="2 9" stroke-linecap="round"/><circle cx="100" cy="42" r="24" fill="url(#g1)"/><circle cx="50" cy="132" r="24" fill="url(#g2)"/><circle cx="150" cy="132" r="24" fill="url(#g1)"/><circle cx="100" cy="104" r="9" fill="#fff"/></svg></div>
+</section>
+
+<nav><button id="prev" aria-label="Slide anterior">‹</button><span id="cnt"></span><button id="next" aria-label="Próximo slide">›</button></nav>
+
+<script>
+const S=[...document.querySelectorAll('.s')],bg=document.querySelector('.bg'),cnt=document.getElementById('cnt'),bar=document.getElementById('bar');
+const P=[['#7c3aed','#06b6d4'],['#db2777','#4f46e5'],['#0ea5e9','#9333ea'],['#f97316','#c026d3'],['#10b981','#6366f1'],['#e11d48','#7c3aed'],['#06b6d4','#ec4899'],['#8b5cf6','#f59e0b']];
+let i=0;
+function go(n){
+  i=Math.max(0,Math.min(S.length-1,n));
+  S.forEach((s,k)=>s.classList.toggle('on',k===i));
+  bg.style.setProperty('--a',P[i][0]);bg.style.setProperty('--b',P[i][1]);
+  cnt.textContent=(i+1)+' / '+S.length;
+  bar.style.width=((i+1)/S.length*100)+'%';
+  S[i].scrollTop=0;
+  try{history.replaceState(null,'','#'+(i+1))}catch(e){}
+}
+document.getElementById('next').onclick=()=>go(i+1);
+document.getElementById('prev').onclick=()=>go(i-1);
+document.addEventListener('keydown',e=>{
+  if(['ArrowRight','ArrowDown','PageDown',' '].includes(e.key)){e.preventDefault();go(i+1)}
+  else if(['ArrowLeft','ArrowUp','PageUp'].includes(e.key)){e.preventDefault();go(i-1)}
+  else if(e.key==='Home')go(0);else if(e.key==='End')go(S.length-1);
+});
+S.forEach(s=>s.addEventListener('click',e=>{
+  if(window.getSelection().toString())return;
+  go(e.clientX>innerWidth*.3?i+1:i-1);
+}));
+let x0=null;
+document.addEventListener('touchstart',e=>{x0=e.touches[0].clientX},{passive:true});
+document.addEventListener('touchend',e=>{
+  if(x0===null)return;const d=e.changedTouches[0].clientX-x0;
+  if(Math.abs(d)>50)go(d<0?i+1:i-1);x0=null;
+});
+go((parseInt(location.hash.slice(1))||1)-1);
+</script>
+</body>
+</html>
